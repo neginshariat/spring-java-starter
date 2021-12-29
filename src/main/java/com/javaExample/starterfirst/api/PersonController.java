@@ -5,7 +5,6 @@ import com.javaExample.starterfirst.service.PersonService;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -37,7 +36,7 @@ public class PersonController {
 		return personService.getAllPeople();
 	}
 	
-	@GetMapping(path = "{id}")
+	@GetMapping(path = "/{id}")
 	public Person getPersonById(@PathVariable("id") UUID id) {
 		return personService.getPersonById(id)
 				.orElse(null);
