@@ -1,9 +1,9 @@
 
 # External URL:
 
- 1: install Json-server
- 2: touch person.json
- 3: paste in person.json:
+1: install Json-server
+2: touch person.json
+3: paste in person.json:
   {
   "persons": [
     {
@@ -24,7 +24,7 @@
     }
   ]
 }
- 4: run : json-server -p 4000 person.json
+4: run : json-server -p 4000 person.json
 
 # spring-java-starter
 
